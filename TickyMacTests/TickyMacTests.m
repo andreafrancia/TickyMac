@@ -17,10 +17,15 @@
 
 @implementation TickyMacTests
 
-- (void)testExample {
-    NSString * contents = @"2015-04-02T14:09:39+0200\n";
+- (void)test_from_end_date_to_remaining
+{
+    AppDelegate * app = [[AppDelegate alloc]init];
+    NSDate * now = [app parseDateFromString:@"2015-04-02 14:00:39 +0000"];
     
-    XCTAssertEqualObjects(@"2015-04-02T14:09:39+0200\n", contents);
+    NSString * time = [app formatRemainingWithEndFromFile:@"2015-04-02T14:25:39+0000\n"
+                                                       now:now];
+    XCTAssertEqualObjects(@"25:00", time);
 }
+
 
 @end
