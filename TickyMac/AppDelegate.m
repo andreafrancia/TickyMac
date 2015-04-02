@@ -9,6 +9,10 @@
 
 #import "AppDelegate.h"
 
+@interface NSStatusBar (NSStatusBar_Private)
+- (id)_statusItemWithLength:(float)l withPriority:(int)p;
+@end
+
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *window;
 @property (strong) NSStatusItem * item;
@@ -17,14 +21,22 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    NSStatusBar *bar = [NSStatusBar systemStatusBar];
-    NSStatusItem * item = [bar statusItemWithLength:NSVariableStatusItemLength];
-    self.item = item; // retain
-    item.title = @"...";
+    // add the item to the status bar
+    self.item = [self  alwaysVisibleStatusItem];
+    self.item.title = @"...";
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (NSStatusItem *)alwaysVisibleStatusItem {
+    int priority = INT_MAX - 2;
+    NSStatusBar * bar = [NSStatusBar systemStatusBar];
+
+    if ([bar respondsToSelector:@selector(_statusItemWithLength:withPriority:)]) {
+        NSStatusItem * item = [bar _statusItemWithLength:0 withPriority:priority];
+        [item setLength:NSVariableStatusItemLength];
+        return item;
+    }
+
+    return [bar statusItemWithLength:NSVariableStatusItemLength];
 }
 
 @end
