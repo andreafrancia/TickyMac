@@ -23,8 +23,22 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // add the item to the status bar
     self.item = [self  alwaysVisibleStatusItem];
-    self.item.title = [self formatRemainingWithEndFromFile:[self readTimeboxEnd]
-                                                       now:[NSDate date]];
+    [self tick:nil];
+
+    [NSTimer scheduledTimerWithTimeInterval:0.1
+                                     target:self
+                                   selector:@selector(tick:)
+                                   userInfo:nil
+                                    repeats:YES];
+    
+}
+
+- (void) tick:(NSTimer*)timer
+{
+    NSString * remaining = [self formatRemainingWithEndFromFile:[self readTimeboxEnd]
+                                                            now:[NSDate date]];
+
+    self.item.title = [NSString stringWithFormat:@"\U0001F345 %@", remaining];
 }
 
 - (NSStatusItem *)alwaysVisibleStatusItem {
