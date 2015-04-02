@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 
+#import "AppDelegate.h"
+
 @interface TickyMacTests : XCTestCase
 
 @end
@@ -16,7 +18,9 @@
 @implementation TickyMacTests
 
 - (void)testExample {
-    XCTAssert(YES, @"Pass");
+    NSString * contents = @"2015-04-02T14:09:39+0200\n";
+    
+    XCTAssertEqualObjects(@"2015-04-02T14:09:39+0200\n", contents);
 }
 
 @end

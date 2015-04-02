@@ -23,7 +23,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // add the item to the status bar
     self.item = [self  alwaysVisibleStatusItem];
-    self.item.title = @"...";
+    self.item.title = [self readTimeboxEnd];
 }
 
 - (NSStatusItem *)alwaysVisibleStatusItem {
@@ -37,6 +37,14 @@
     }
 
     return [bar statusItemWithLength:NSVariableStatusItemLength];
+}
+
+-(NSString*)readTimeboxEnd
+{
+    NSString * homeDir = NSHomeDirectory();
+    NSString * filename = [homeDir stringByAppendingPathComponent:@".ticky/last/end"];
+    
+    return [NSString stringWithContentsOfFile:filename encoding:NSUTF8StringEncoding error:nil];
 }
 
 @end

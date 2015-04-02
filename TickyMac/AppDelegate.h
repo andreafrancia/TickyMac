@@ -10,6 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+-(NSString*)readTimeboxEnd;
 
 @end
 
