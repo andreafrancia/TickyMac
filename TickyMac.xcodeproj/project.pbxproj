@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6577C1F11ACD63380054CFDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6577C1F01ACD63380054CFDD /* AppDelegate.m */; };
+		6577C1F31ACD63380054CFDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6577C1F21ACD63380054CFDD /* main.m */; };
+		6577C1F51ACD63380054CFDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6577C1F41ACD63380054CFDD /* Images.xcassets */; };
+		6577C1F81ACD63380054CFDD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6577C1F61ACD63380054CFDD /* MainMenu.xib */; };
+		6577C2041ACD63380054CFDD /* TickyMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6577C2031ACD63380054CFDD /* TickyMacTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6577C1FE1ACD63380054CFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6577C1E21ACD63380054CFDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6577C1E91ACD63380054CFDD;
+			remoteInfo = TickyMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6577C1EA1ACD63380054CFDD /* TickyMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickyMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6577C1EE1ACD63380054CFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6577C1EF1ACD63380054CFDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6577C1F01ACD63380054CFDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6577C1F21ACD63380054CFDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6577C1F41ACD63380054CFDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6577C1F71ACD63380054CFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6577C1FD1ACD63380054CFDD /* TickyMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickyMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6577C2021ACD63380054CFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6577C2031ACD63380054CFDD /* TickyMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickyMacTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6577C1E71ACD63380054CFDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6577C1FA1ACD63380054CFDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6577C1E11ACD63380054CFDD = {
+			isa = PBXGroup;
+			children = (
+				6577C1EC1ACD63380054CFDD /* TickyMac */,
+				6577C2001ACD63380054CFDD /* TickyMacTests */,
+				6577C1EB1ACD63380054CFDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6577C1EB1ACD63380054CFDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6577C1EA1ACD63380054CFDD /* TickyMac.app */,
+				6577C1FD1ACD63380054CFDD /* TickyMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6577C1EC1ACD63380054CFDD /* TickyMac */ = {
+			isa = PBXGroup;
+			children = (
+				6577C1EF1ACD63380054CFDD /* AppDelegate.h */,
+				6577C1F01ACD63380054CFDD /* AppDelegate.m */,
+				6577C1F41ACD63380054CFDD /* Images.xcassets */,
+				6577C1F61ACD63380054CFDD /* MainMenu.xib */,
+				6577C1ED1ACD63380054CFDD /* Supporting Files */,
+			);
+			path = TickyMac;
+			sourceTree = "<group>";
+		};
+		6577C1ED1ACD63380054CFDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6577C1EE1ACD63380054CFDD /* Info.plist */,
+				6577C1F21ACD63380054CFDD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6577C2001ACD63380054CFDD /* TickyMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				6577C2031ACD63380054CFDD /* TickyMacTests.m */,
+				6577C2011ACD63380054CFDD /* Supporting Files */,
+			);
+			path = TickyMacTests;
+			sourceTree = "<group>";
+		};
+		6577C2011ACD63380054CFDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6577C2021ACD63380054CFDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6577C1E91ACD63380054CFDD /* TickyMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6577C2071ACD63380054CFDD /* Build configuration list for PBXNativeTarget "TickyMac" */;
+			buildPhases = (
+				6577C1E61ACD63380054CFDD /* Sources */,
+				6577C1E71ACD63380054CFDD /* Frameworks */,
+				6577C1E81ACD63380054CFDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TickyMac;
+			productName = TickyMac;
+			productReference = 6577C1EA1ACD63380054CFDD /* TickyMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6577C1FC1ACD63380054CFDD /* TickyMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6577C20A1ACD63380054CFDD /* Build configuration list for PBXNativeTarget "TickyMacTests" */;
+			buildPhases = (
+				6577C1F91ACD63380054CFDD /* Sources */,
+				6577C1FA1ACD63380054CFDD /* Frameworks */,
+				6577C1FB1ACD63380054CFDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6577C1FF1ACD63380054CFDD /* PBXTargetDependency */,
+			);
+			name = TickyMacTests;
+			productName = TickyMacTests;
+			productReference = 6577C1FD1ACD63380054CFDD /* TickyMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6577C1E21ACD63380054CFDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Andrea Francia";
+				TargetAttributes = {
+					6577C1E91ACD63380054CFDD = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					6577C1FC1ACD63380054CFDD = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 6577C1E91ACD63380054CFDD;
+					};
+				};
+			};
+			buildConfigurationList = 6577C1E51ACD63380054CFDD /* Build configuration list for PBXProject "TickyMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6577C1E11ACD63380054CFDD;
+			productRefGroup = 6577C1EB1ACD63380054CFDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6577C1E91ACD63380054CFDD /* TickyMac */,
+				6577C1FC1ACD63380054CFDD /* TickyMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6577C1E81ACD63380054CFDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6577C1F51ACD63380054CFDD /* Images.xcassets in Resources */,
+				6577C1F81ACD63380054CFDD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6577C1FB1ACD63380054CFDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6577C1E61ACD63380054CFDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6577C1F31ACD63380054CFDD /* main.m in Sources */,
+				6577C1F11ACD63380054CFDD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6577C1F91ACD63380054CFDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6577C2041ACD63380054CFDD /* TickyMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6577C1FF1ACD63380054CFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6577C1E91ACD63380054CFDD /* TickyMac */;
+			targetProxy = 6577C1FE1ACD63380054CFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6577C1F61ACD63380054CFDD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6577C1F71ACD63380054CFDD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6577C2051ACD63380054CFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6577C2061ACD63380054CFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6577C2081ACD63380054CFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TickyMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6577C2091ACD63380054CFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TickyMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6577C20B1ACD63380054CFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TickyMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickyMac.app/Contents/MacOS/TickyMac";
+			};
+			name = Debug;
+		};
+		6577C20C1ACD63380054CFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TickyMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickyMac.app/Contents/MacOS/TickyMac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6577C1E51ACD63380054CFDD /* Build configuration list for PBXProject "TickyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6577C2051ACD63380054CFDD /* Debug */,
+				6577C2061ACD63380054CFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6577C2071ACD63380054CFDD /* Build configuration list for PBXNativeTarget "TickyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6577C2081ACD63380054CFDD /* Debug */,
+				6577C2091ACD63380054CFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6577C20A1ACD63380054CFDD /* Build configuration list for PBXNativeTarget "TickyMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6577C20B1ACD63380054CFDD /* Debug */,
+				6577C20C1ACD63380054CFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6577C1E21ACD63380054CFDD /* Project object */;
+}
