@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.m
 //  TickyMac
@@ -9,14 +10,17 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
 @property (weak) IBOutlet NSWindow *window;
+@property (strong) NSStatusItem * item;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    NSStatusBar *bar = [NSStatusBar systemStatusBar];
+    NSStatusItem * item = [bar statusItemWithLength:NSVariableStatusItemLength];
+    self.item = item; // retain
+    item.title = @"...";
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
