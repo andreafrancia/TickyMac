@@ -11,6 +11,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 @property (copy) NSString* iconForWork;
 @property (copy) NSString* iconForRest;
+@property (copy) NSString* iconForSleep;
 - (NSString*)readTimeboxEnd;
 - (NSString*)formatRemaining:(NSTimeInterval)remaining;
 - (NSString*)formatRemainingWithEndFromFile:(NSString*)endFromFile now:(NSDate*)now;

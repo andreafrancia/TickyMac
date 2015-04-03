@@ -23,6 +23,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.iconForWork = @"\U0001F345 ";
     self.iconForRest = @"\u2615\uFE0F ";
+    self.iconForSleep = @"\U0001F4A4 ";
     
     // add the item to the status bar
     self.item = [self  alwaysVisibleStatusItem];
@@ -75,7 +76,14 @@
 
 - (NSString*)formatRemaining:(NSTimeInterval)remaining
 {
-    NSString * icon = (remaining >= 0) ? _iconForWork : _iconForRest;
+    NSString * icon;
+    if(remaining>=0)
+        icon = _iconForWork;
+    else if (remaining <= 0 && remaining > -25*60)
+        icon = _iconForRest;
+    else
+        icon = _iconForSleep;
+    
     remaining = abs(remaining);
     NSInteger mm = ((NSInteger)round(remaining)) / 60;
     NSInteger ss = ((NSInteger)round(remaining)) % 60;
