@@ -22,7 +22,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.iconForWork = @"\U0001F345 ";
-    self.iconForRest = @"\u2615\uFE0F";
+    self.iconForRest = @"\u2615\uFE0F ";
     
     // add the item to the status bar
     self.item = [self  alwaysVisibleStatusItem];
@@ -69,10 +69,17 @@
 {
     NSDate * end = [self parseDateFromString:[self trimString:endFromFile]];
     NSTimeInterval remaining = [end timeIntervalSinceDate:now];
+
+    return [self formatRemaining:remaining];
+}
+
+- (NSString*)formatRemaining:(NSTimeInterval)remaining
+{
+    NSString * icon = (remaining >= 0) ? _iconForWork : _iconForRest;
+    remaining = abs(remaining);
     NSInteger mm = ((NSInteger)round(remaining)) / 60;
     NSInteger ss = ((NSInteger)round(remaining)) % 60;
-    
-    return [NSString stringWithFormat:@"%@%02ld:%02ld", _iconForWork, mm, ss];
+    return [NSString stringWithFormat:@"%@%02ld:%02ld", icon, mm, ss];
 }
 
 - (NSDate*) parseDateFromString:(NSString*)iso8601date

@@ -12,6 +12,7 @@
 @property (copy) NSString* iconForWork;
 @property (copy) NSString* iconForRest;
 - (NSString*)readTimeboxEnd;
+- (NSString*)formatRemaining:(NSTimeInterval)remaining;
 - (NSString*)formatRemainingWithEndFromFile:(NSString*)endFromFile now:(NSDate*)now;
 - (NSDate*) parseDateFromString:(NSString*)iso8601date;
 @end
