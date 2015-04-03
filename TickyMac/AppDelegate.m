@@ -21,6 +21,9 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    self.iconForWork = @"\U0001F345 ";
+    self.iconForRest = @"\u2615\uFE0F";
+    
     // add the item to the status bar
     self.item = [self  alwaysVisibleStatusItem];
     [self tick:nil];
@@ -38,7 +41,7 @@
     NSString * remaining = [self formatRemainingWithEndFromFile:[self readTimeboxEnd]
                                                             now:[NSDate date]];
 
-    self.item.title = [NSString stringWithFormat:@"\U0001F345 %@", remaining];
+    self.item.title = [NSString stringWithFormat:@"%@", remaining];
 }
 
 - (NSStatusItem *)alwaysVisibleStatusItem {
@@ -68,7 +71,8 @@
     NSTimeInterval remaining = [end timeIntervalSinceDate:now];
     NSInteger mm = ((NSInteger)round(remaining)) / 60;
     NSInteger ss = ((NSInteger)round(remaining)) % 60;
-    return [NSString stringWithFormat:@"%02ld:%02ld", mm, ss];
+    
+    return [NSString stringWithFormat:@"%@%02ld:%02ld", _iconForWork, mm, ss];
 }
 
 - (NSDate*) parseDateFromString:(NSString*)iso8601date

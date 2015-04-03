@@ -9,7 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
--(NSString*)readTimeboxEnd;
+@property (copy) NSString* iconForWork;
+@property (copy) NSString* iconForRest;
+- (NSString*)readTimeboxEnd;
 - (NSString*)formatRemainingWithEndFromFile:(NSString*)endFromFile now:(NSDate*)now;
 - (NSDate*) parseDateFromString:(NSString*)iso8601date;
 @end
